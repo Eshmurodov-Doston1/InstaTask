@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="560" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="InstaTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="560"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="560"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21O-Of-Ca6">
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_user" translatesAutoresizingMaskIntoConstraints="NO" id="2Qc-Ap-9bX">
+                                <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="R0s-jN-1ra"/>
+                                    <constraint firstAttribute="height" constant="60" id="t7x-wr-YzP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dostonbek Eshmurodov" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50Z-eP-g7L">
+                                <rect key="frame" x="80" y="30" width="263" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="7Kj-Nx-u3K"/>
+                            <constraint firstAttribute="trailing" secondItem="50Z-eP-g7L" secondAttribute="trailing" constant="10" id="Tf2-ad-H2J"/>
+                            <constraint firstItem="2Qc-Ap-9bX" firstAttribute="centerY" secondItem="21O-Of-Ca6" secondAttribute="centerY" id="WG7-Bi-zQU"/>
+                            <constraint firstItem="2Qc-Ap-9bX" firstAttribute="leading" secondItem="21O-Of-Ca6" secondAttribute="leading" constant="10" id="X81-Db-6lZ"/>
+                            <constraint firstItem="50Z-eP-g7L" firstAttribute="leading" secondItem="2Qc-Ap-9bX" secondAttribute="trailing" constant="10" id="iQ5-h4-CYa"/>
+                            <constraint firstItem="2Qc-Ap-9bX" firstAttribute="top" secondItem="21O-Of-Ca6" secondAttribute="top" constant="10" id="odd-hQ-I8I"/>
+                            <constraint firstItem="50Z-eP-g7L" firstAttribute="centerY" secondItem="21O-Of-Ca6" secondAttribute="centerY" id="wAn-Lp-rRE"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aNe-pg-P04">
+                        <rect key="frame" x="0.0" y="80" width="353" height="480"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tii-ed-fnR">
+                                <rect key="frame" x="0.0" y="0.0" width="176.5" height="480"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="james" translatesAutoresizingMaskIntoConstraints="NO" id="psD-Kp-ehD">
+                                        <rect key="frame" x="0.0" y="0.0" width="176.5" height="480"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="psD-Kp-ehD" firstAttribute="top" secondItem="Tii-ed-fnR" secondAttribute="top" id="G5d-ag-2aN"/>
+                                    <constraint firstAttribute="bottom" secondItem="psD-Kp-ehD" secondAttribute="bottom" id="KIU-Mv-tPN"/>
+                                    <constraint firstItem="psD-Kp-ehD" firstAttribute="leading" secondItem="Tii-ed-fnR" secondAttribute="leading" id="KZL-Q3-NWq"/>
+                                    <constraint firstAttribute="trailing" secondItem="psD-Kp-ehD" secondAttribute="trailing" id="W1Q-X1-N2J"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B81-E6-LjS">
+                                <rect key="frame" x="176.5" y="0.0" width="176.5" height="480"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music_image" translatesAutoresizingMaskIntoConstraints="NO" id="TUq-Dg-8gK">
+                                        <rect key="frame" x="0.0" y="0.0" width="176.5" height="480"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="TUq-Dg-8gK" firstAttribute="leading" secondItem="B81-E6-LjS" secondAttribute="leading" id="ZOq-YM-02l"/>
+                                    <constraint firstAttribute="bottom" secondItem="TUq-Dg-8gK" secondAttribute="bottom" id="kJN-w8-oYz"/>
+                                    <constraint firstAttribute="trailing" secondItem="TUq-Dg-8gK" secondAttribute="trailing" id="m6W-Sd-aGK"/>
+                                    <constraint firstItem="TUq-Dg-8gK" firstAttribute="top" secondItem="B81-E6-LjS" secondAttribute="top" id="mre-fO-oLV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aNe-pg-P04" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8DH-dq-ia0"/>
+                    <constraint firstItem="21O-Of-Ca6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="D7K-HX-zkX"/>
+                    <constraint firstAttribute="trailing" secondItem="aNe-pg-P04" secondAttribute="trailing" id="OHa-oo-uiq"/>
+                    <constraint firstAttribute="bottom" secondItem="aNe-pg-P04" secondAttribute="bottom" id="PAI-rO-QBK"/>
+                    <constraint firstItem="aNe-pg-P04" firstAttribute="top" secondItem="21O-Of-Ca6" secondAttribute="bottom" id="dhp-fw-I8O"/>
+                    <constraint firstItem="21O-Of-Ca6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jW6-BY-iFf"/>
+                    <constraint firstAttribute="trailing" secondItem="21O-Of-Ca6" secondAttribute="trailing" id="wh6-a6-tm1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageProfil" destination="2Qc-Ap-9bX" id="DVK-9k-SUO"/>
+                <outlet property="nameProfil" destination="50Z-eP-g7L" id="s21-Ns-APY"/>
+                <outlet property="postFirstImage" destination="psD-Kp-ehD" id="k2Z-57-57e"/>
+                <outlet property="postSecondImage" destination="TUq-Dg-8gK" id="bPF-kD-CXr"/>
+            </connections>
+            <point key="canvasLocation" x="165.94202898550725" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="image_user" width="1300" height="1229"/>
+        <image name="james" width="5184" height="3456"/>
+        <image name="music_image" width="800" height="411"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
